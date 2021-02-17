@@ -34,4 +34,7 @@ echo "FLUSH PRIVILEGES;" | mysql -u root
 service nginx start
 service php7.3-fpm start
 
+echo "Ready to use !"
+
+# comment when -it
 sleep infinity

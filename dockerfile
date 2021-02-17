@@ -14,8 +14,7 @@ EXPOSE      80
 
 COPY        srcs/entrypoint.sh .
 COPY        srcs/wp-config.php .
-COPY        srcs/default.conf etc/nginx/sites-available/
-COPY        srcs/default_no_autoindex.conf tmp/
+COPY        srcs/default.conf etc/nginx/sites-available/     
 
 ENTRYPOINT  ["bash", "./entrypoint.sh"]
-#CMD         ["bash"]
+CMD         ["bash"]
